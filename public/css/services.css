@@ -1,0 +1,50 @@
+.service__item-link {
+    display: block;
+    background: #F8F8F8;
+    padding: 1rem;
+    text-decoration: none;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    
+    /*width: calc(100% / 2);*/
+     
+    /*list-style: none; */  
+}
+.services__item {
+   /* display: flex;
+    flex-wrap: wrap;*/
+    padding: 10px;
+}
+.services__desc {
+    padding-top: 15px;
+    color: #919191;
+    border-bottom: 2px solid #b67216;
+    padding-bottom: 20px;
+}
+.services__bottom {
+    padding-top: 20px;    
+}
+.services__title {
+    font-weight: bold;
+    font-size: 20px;
+}
+.services__header {
+    font-size: 26px;
+    font-weight: bold;
+}
+.services__condition-value {
+    font-size: 26px;
+}
+.services__condition-value::after {
+    content: " руб."
+}
+.service__item-link:hover .services__desc {    
+    color: white;
+    border-bottom: 2px dotted white; 
+    transition: 0.5s; 
+}
+.service__item-link:hover {
+    background: #2a86d8;
+    color: white;    
+    text-decoration: none;
+    transition: 0.5s;
+}
