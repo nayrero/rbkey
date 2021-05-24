@@ -27,7 +27,7 @@
 
 <script>
     export default {
-        name:"home",                
+        name:"recalls",                
         data () {
 		return {
             /* Устанавливаем индекс слайда по умолчанию */

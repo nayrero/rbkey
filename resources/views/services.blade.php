@@ -6,5 +6,5 @@
 @endsection
 @section('scripts')
     <link rel="stylesheet" href="{{ asset("css/services.css") }}">      
-    <script src="{{ asset("js/app.js") }}"></script> 
+    <script src="{{ asset("js/app.js") }}"></script>    
 @endsection

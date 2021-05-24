@@ -32,5 +32,6 @@
 </section>
 @endsection
 @section('scripts')      
+    <link rel="stylesheet" href="{{ asset("css/about.css") }}">   
     <script src="{{ asset("js/app.js") }}"></script> 
 @endsection

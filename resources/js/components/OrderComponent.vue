@@ -28,6 +28,7 @@
 <script>
     import modal from './ModalComponent.vue';
     export default {
+        name:"order",
         components: {
             modal,
         },

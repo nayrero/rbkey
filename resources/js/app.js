@@ -24,10 +24,11 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 //import MyComponent from './components/RecallsComponent.vue'
 
-Vue.component('recalls-component', require('./components/RecallsComponent.vue').default);
+//Vue.component('recalls-component', require('./components/RecallsComponent.vue').default);
 Vue.component('aboutslider-component', require('./components/AboutSliderComponent.vue').default);
 Vue.component('servicesitem-component', require('./components/ServicesItemComponent.vue').default);
-Vue.component('order-component', require('./components/OrderComponent.vue').default);
+//Vue.component('order-component', require('./components/OrderComponent.vue').default);
+Vue.component('index-component', require('./components/IndexComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -57,6 +58,9 @@ const app = new Vue({
 const app = new Vue({
     el: '#app',  
 });
+/*const recalls_app = new Vue({
+  el: '#recalls-app',  
+});*/
 /*const recalls_comp_app = new Vue({
     el: '#recalls-slider',  
 });

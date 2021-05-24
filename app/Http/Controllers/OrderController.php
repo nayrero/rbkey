@@ -19,7 +19,7 @@ class OrderController extends Controller
         $data->email = $request->email;
         $data->phone = $request->phone;
         //$comment = 'Это сообщение отправлено из формы обратной связи';
-        $mailto = "nayrero@mail.ru";
+        $mailto = "info@rbkey.ru";
         //$message = response()->json([$request->all()]);
         Mail::to($mailto)->send(new OrderMailer($data));
         //return response()->json([$request->all()]);
