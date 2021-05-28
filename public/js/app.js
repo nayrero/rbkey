@@ -2084,14 +2084,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "modal",
   data: function data() {
-    return {//show: false
-    };
+    return {};
   },
-  methods: {
-    /*closeModal: function () {
-        this.show = false
-    }*/
-  }
+  methods: {}
 });
 
 /***/ }),
@@ -2151,8 +2146,7 @@ __webpack_require__.r(__webpack_exports__);
       phone: '',
       output: '',
       showModal: false,
-      successRequest: false //requestError: false
-
+      successRequest: false
     };
   },
   directives: {
@@ -2175,12 +2169,6 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   methods: {
-    /*showModal() {
-        this.isModalVisible = true;
-    },
-    closeModal() {
-        this.isModalVisible = false;
-    },*/
     formSubmit: function formSubmit(e) {
       e.preventDefault();
       var currentObj = this;
@@ -2252,7 +2240,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   name: "recalls",
   data: function data() {
     return {
-      /* Устанавливаем индекс слайда по умолчанию */
       slideIndex: 1,
       sliderAllCount: 0,
       recalls: [{
@@ -2341,7 +2328,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   },
   mounted: function mounted() {
     this.initSlider();
-    console.log('mounted');
   }
 });
 
@@ -2467,7 +2453,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   created: function created() {
-    this.fetchData(); //this.sortingData();
+    this.fetchData();
   },
   computed: {
     sortingECP: function sortingECP() {

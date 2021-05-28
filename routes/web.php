@@ -29,9 +29,9 @@ Route::get('/faq', function () {
     return view('faq');
 });
 Route::post('/order', 'App\Http\Controllers\OrderController@order');
-//Route::get('/order', 'App\Http\Controllers\OrderController@send');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//Route::get('/services', 'App\Http\Controllers\ServicesItemController@service_item')->name('services');
+

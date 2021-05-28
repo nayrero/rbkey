@@ -19,12 +19,9 @@ export default {
     name: 'tabs',
     data() {
         return {tabs: [] };
-    },
-    
-    created() {
-        
-        this.tabs = this.$children;
-        
+    },    
+    created() {        
+        this.tabs = this.$children;        
     },
     methods: {
         selectTab(selectedTab) {

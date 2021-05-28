@@ -42,8 +42,7 @@
               phone: '',
               output: '',              
               showModal: false,
-              successRequest: false,
-              //requestError: false
+              successRequest: false,              
             };
         },
         directives: {
@@ -52,10 +51,8 @@
                     el.oninput = function(e) {
                     if (!e.isTrusted) {
                         return
-                    }
-            
+                    }            
                     const x = this.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,4})/)
-
                     if (!x[2] && x[1] !== '') {
                         this.value = x[1] === '8' ? x[1] : '8' + x[1]
                     } else {
@@ -65,13 +62,7 @@
             }
 
         },
-        methods: {
-            /*showModal() {
-                this.isModalVisible = true;
-            },
-            closeModal() {
-                this.isModalVisible = false;
-            },*/
+        methods: {            
             formSubmit(e) {
                 e.preventDefault();
                 let currentObj = this;

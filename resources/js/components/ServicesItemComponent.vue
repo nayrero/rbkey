@@ -98,18 +98,15 @@ export default {
             tab
         },
     data(){
-        return{
-            
+        return{            
             service_data: [],            
             error: null,
             loading: false,
-            active: false
-            
+            active: false            
         }
     },
     created() {
-        this.fetchData();
-        //this.sortingData();
+        this.fetchData();        
     },
     computed: {
         sortingECP() {                
@@ -136,9 +133,9 @@ export default {
                         this.loading = false;
                         this.service_data = this.service_data2 = response.data;
                     }).catch(error => {
-                    this.loading = false;
-                    this.error = error.response.data.message || error.message;
-                });
+                        this.loading = false;
+                        this.error = error.response.data.message || error.message;
+                    });
             },
             
         },

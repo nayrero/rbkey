@@ -15,14 +15,15 @@ class OrderController extends Controller
             'phone' => 'required|max:16',
         ]);
         $data = new stdClass();
+        
         $data->name = $request->name;
         $data->email = $request->email;
         $data->phone = $request->phone;
-        //$comment = 'Это сообщение отправлено из формы обратной связи';
-        $mailto = "info@rbkey.ru";
-        //$message = response()->json([$request->all()]);
+
+        $mailto = "nayrero@mail.ru";
+       
         Mail::to($mailto)->send(new OrderMailer($data));
-        //return response()->json([$request->all()]);
+       
         return "Ваша заявка принята, ждите звонка!";
     }
     

@@ -9,27 +9,19 @@ export default {
     props: {
         name: { required: true },
         selected: { default: false}
-    },
-    
-    data() {
-        
+    },    
+    data() {        
         return {
             isActive: false
-        };
-        
-    },
-    
-    computed: {
-        
+        };        
+    },    
+    computed: {        
         href() {
             return '#' + this.name.toLowerCase().replace(/ /g, '-');
         }
-    },
-    
-    mounted() {
-        
-        this.isActive = this.selected;
-        
+    },    
+    mounted() {        
+        this.isActive = this.selected;        
     }
 }
 </script>

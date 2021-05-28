@@ -28,8 +28,8 @@ class OrderMailer extends Mailable
      */
     public function build()
     {
-    //return $this->view('email');
-    return $this->from('info@rbkey.ru', 'noreply@rbkey.ru')
+    
+    return $this
             ->subject('Заявка с сайта')
             ->view('email', ['data' => $this->data]);
     }

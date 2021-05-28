@@ -29,22 +29,18 @@ export default {
             // Общее количество слайдов
             this.sliderAllCount = this.slides.length;
             },
-        sliderShow: function () {
-             
+        sliderShow: function () {             
             this.slides[this.currentSlide].classList.remove('show');
             this.currentSlide = (this.currentSlide+1)%this.sliderAllCount;
             this.slides[this.currentSlide].classList.add('show');
-               
         }
              
     },
     mounted(){
        this.initSlider();
        this.sliderShow();
-       setInterval(this.sliderShow, 7000);
-       
-   }      
-
+       setInterval(this.sliderShow, 7000);       
+   }    
 }
 </script>
 

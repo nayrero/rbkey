@@ -29,8 +29,7 @@
     export default {
         name:"recalls",                
         data () {
-		return {
-            /* Устанавливаем индекс слайда по умолчанию */
+		return {            
             slideIndex: 1,
             sliderAllCount: 0,				
             recalls: [
@@ -58,7 +57,7 @@
                 let slides = document.getElementsByClassName("js-slide");
                 
                 if (n > this.sliderAllCount) {
-                this.slideIndex = 1
+                    this.slideIndex = 1
                 }
                 if (n < 1) {
                     this.slideIndex = this.sliderAllCount
@@ -71,7 +70,6 @@
         
                  
             },   
-
             /* Увеличиваем индекс на 1 — показываем следующий слайд*/
              nextSlide: function() {
                 this.showSlides(this.slideIndex += 1);                
@@ -89,11 +87,7 @@
            
         },
         mounted(){
-            this.initSlider()
-            
-            
-            
-        console.log('mounted');
+            this.initSlider()     
         }
 	
 	

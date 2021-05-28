@@ -34,14 +34,12 @@
     export default {
         name: "modal",
         data: function () {
-            return {
-                //show: false
+            return { 
+                             
             }
         },
         methods: {
-            /*closeModal: function () {
-                this.show = false
-            }*/
+
         }
     }
 </script>
